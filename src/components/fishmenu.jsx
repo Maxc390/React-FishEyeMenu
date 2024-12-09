@@ -18,14 +18,14 @@ const FisheyeMenu = () => {
 
   return (
     <div className="flex justify-center  w-full  min-h-screen bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-4">
-      <div className="flex mt-[65vh] justify-between w-full h-fit  mx-4 max-w-6xl">
+      <div className="flex mt-[65vh] justify-between  w-full h-fit  mx-4 max-w-6xl">
         {usabilityHeuristics.map((item) => (
           <div
             key={item.id}
             onMouseEnter={() => setActiveItem(item.id)}
             onMouseLeave={() => setActiveItem(null)}
-            className={`relative flex flex-col items-center w-20 h-20 p-4 mx-2 rounded-full shadow-lg bg-white transition-all duration-300 scale-100  ${
-              activeItem === item.id ? "w-48 h-auto scale-125" : " h-16"
+            className={`relative flex flex-col justify-center items-center w-20  p-4 mx-2 rounded-full shadow-lg bg-white transition-all duration-300 scale-100  ${
+              activeItem === item.id ? "w-48 h-auto scale-125" : " h-20"
             }`}
           >
             <div className="font-semibold text-lg text-gray-800">{item.label}</div>
