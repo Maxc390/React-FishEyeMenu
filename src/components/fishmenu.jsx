@@ -24,8 +24,8 @@ const FisheyeMenu = () => {
             key={item.id}
             onMouseEnter={() => setActiveItem(item.id)}
             onMouseLeave={() => setActiveItem(null)}
-            className={`relative flex flex-col justify-center items-center w-20  p-4 mx-2 rounded-full shadow-lg bg-white transition-all duration-300 scale-100  ${
-              activeItem === item.id ? "w-48 h-auto scale-125" : " h-20"
+            className={`relative flex flex-col justify-center items-center border-2 border-black w-20  p-4 mx-2 rounded-full shadow-lg bg-white transition-all duration-300 scale-100  ${
+              activeItem === item.id ? "w-36 h-36 scale-125" : " h-20"
             }`}
           >
             <div className="font-semibold text-lg text-gray-800">{item.label}</div>
